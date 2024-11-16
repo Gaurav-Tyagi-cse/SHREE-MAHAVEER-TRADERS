@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHREE MAHAVEER TRADERS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <header>
+        <div class="nav-bar-start">
+            <div class="nav-img">
+                <img src="Image/logo-0001.png" alt="">
+            </div>
+            <div class="nav-bar">
+                <a href="index.html">
+                    <ul>Home</ul>
+                </a>
+                <ul>
+                    <li> About Us
+
+                        <div class="dropdown">
+                            <a href="about.html">
+                                <ul>About Us</ul>
+                            </a>
+                            <a href="team.html">
+                                <ul>Our Team</ul>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li> Services
+
+                        <div class="dropdown">
+                            <a href="residential.html">
+                                <ul>Residential Installation</ul>
+                            </a>
+                            <a href="commercial.html">
+                                <ul>Commercial & <br>Industrial Installation</ul>
+                            </a>
+                            <a href="maintenance.html">
+                                <ul>Maintenance & Allied <br> Work</ul>
+                            </a>
+                            <a href="Solar.html">
+                                <ul>Solar light</ul>
+                            </a>
+                            <a href="solar-water.html">
+                                <ul>Solar water heater</ul>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li> DISCOVER MORE
+
+                        <div class="dropdown">
+                            <a href="knowledge.html">
+                                <ul>Knowledge Section</ul>
+                            </a>
+                            <a href="faq.html">
+                                <ul>FAQ</ul>
+                            </a>
+                            <a href="calculation.html">
+                                <ul>Solar Calculation</ul>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="contact.html">
+                    <ul>Contact Us</ul>
+                </a>
+            </div>
+            <div class="m-burger">
+                <i class="fa-solid fa-bars-progress"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="abt-nav-img">
+        <div class="about-nav-section" data-aos="fade-up" data-aos-duration="1500">
+            <h1>Solar Calculation</h1>
+            <p><a href="index.html"> Home </a>/ Solar Calculation</p>
+        </div>
+
+    </div>
+
+    <div class="calculator">
+        <div class="form-container">
+            <h1>Solar Calculator</h1>
+            <form id="enquiry-form">
+                <!-- Customer Details -->
+                <label for="name">Customer Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="mobile">Customer Mobile No:</label>
+                <input type="number" id="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+
+                <label for="ivrs">IVRS No:</label>
+                <input type="text" id="ivrs" placeholder="Enter your IVRS number" required>
+
+                <!-- Units Consumed Dropdown -->
+                <label for="units">Units Consumed:</label>
+                <select id="months" required>
+                    <option value="" disabled>Select units consumed</option>
+                    <option value="year">Total units consumed in a year</option>
+                    <option value="6-months">Total units consumed in 6 months</option>
+                    <option value="1-month">Total units consumed in a month</option>
+                </select>
+
+                <label for="name">Total Units:</label>
+                <input type="number" id="nounits" placeholder="Enter your consumed units" required>
+
+                <!-- State Dropdown -->
+                <label for="state">Select State:</label>
+                <select id="state" onchange="loadDistricts()" required>
+                    <option value="">Select State</option>
+                </select>
+
+                <!-- District Dropdown -->
+                <label for="district">Select District:</label>
+                <select id="district" required>
+                    <option value="">Select District</option>
+                </select>
+
+                <label for="category">Customer Category:</label>
+                <select id="category" required>
+                    <option value="" disabled>Select Category</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                </select>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- !---------------------------------------------------Footer (Start)-----------------------------------! -->
+
+    <footer>
+        <div class="start-foot">
+
+            <div class="footer-1">
+                <div class="foot-logo">
+                    <div class="footer-logo-img">
+                        <img src="Image/logo-0001.png" alt="">
+                    </div>
+                    <h5> “We, the solar concern of Shree Mahaveer Traders aim to provide innovative power alternatives
+                        and future energy solutions. The firm's operation in service sector especially in the arena of
+                        renewable energy has remarkably produced happy and satisfied customers.
+
+                    </h5>
+                </div>
+                <div class="foot-logo">
+                    <h3>Services</h3>
+                    <p>➪<a href="residential.html"> Residential Installation</a></p>
+                    <p>➪<a href="commercial.html"> Commercial & <br>Industrial Installation</a></p>
+                    <p>➪<a href="maintenance.html">Maintenance & Allied <br> Work </a></p>
+                    <p>➪<a href="Solar.html">Solar light </a></p>
+                    <p>➪<a href="solar-water.html">Solar water heater </a></p>
+
+                </div>
+                <div class="foot-logos">
+                    <h3>Contact Us</h3>
+                    <div class="cont-call">
+                        <p> <i class="fa-solid fa-location-dot"> </i></p>
+                        <p>181/57 Jaora Road, Near Mahaveer Toll Kata, Ratlam
+                            Madhya Pradesh 457001</p>
+                        </p>
+                    </div>
+                    <div class="cont-call">
+                        <p><i class="fa-solid fa-envelope"> </i></p>
+                        <p>smtsolar07@gmail.com</p>
+                    </div>
+                    <div class="cont-call">
+                        <p> <i class="fa-solid fa-phone"></i></p>
+                        <p> 9770260078 <br> 7974672806</p>
+                    </div>
+                </div>
+                <div class="foot-logos">
+                    <h3>Social Media Links</h3>
+                    <p><a href="#"><i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </p>
+                    <p><a href="#"> <i class="fa-brands fa-facebook"></i>
+                            Facebook</a></p>
+                    <p><a href="#"> <i class="fa-brands fa-linkedin"></i>
+                            Linkedin</a></p>
+                    <p><a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a></p>
+                    <p><a href="#"> <i class="fa-brands fa-youtube"></i> Youtube</a></p>
+                </div>
+            </div>
+            <div class="footer-row">
+                <p>©Copyright 2024 Finovesh. All Right Reserved || Designed and Maintained by <a
+                        href="https://bhoomitechzone.in/"> BTPL</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="app.js"></script>
+    <script src="clone.js"></script>
+    <script src="mouse.js"></script>
+
+    <script>
+        // List of Indian states and their districts
+        const stateDistrictData = {
+            "Andhra Pradesh": ["Anantapur", "Chittoor", "East Godavari", "Guntur", "Kadapa", "Krishna", "Kurnool", "Prakasam", "Srikakulam", "Visakhapatnam", "Vizianagaram", "West Godavari", "Y.S.R. Kadapa"],
+            "Arunachal Pradesh": ["Tawang", "West Kameng", "East Kameng", "Papum Pare", "Upper Subansiri", "West Siang", "East Siang", "Siang", "Lower Siang", "Changlang", "Tirap", "Lohit", "Namsai", "Anjaw", "Kurung Kumey", "Kra Daadi", "Dibang Valley", "Lower Dibang Valley", "Upper Dibang Valley", "Kamle"],
+            "Assam": ["Baksa", "Barpeta", "Bongaigaon", "Cachar", "Charaideo", "Chirang", "Darrang", "Dhemaji", "Dibrugarh", "Goalpara", "Golaghat", "Hailakandi", "Jorhat", "Kamrup", "Kamrup Metropolitan", "Karbi Anglong", "Karimganj", "Kokrajhar", "Lakhimpur", "Majuli", "Morigaon", "Nagaon", "Nalbari", "Sivasagar", "Sonitpur", "South Salmara-Mankachar", "Tinsukia", "Udalguri", "West Karbi Anglong"],
+            "Bihar": ["Araria", "Arwal", "Aurangabad", "Banka", "Begusarai", "Bhagalpur", "Bhojpur", "Buxar", "Darbhanga", "East Champaran", "Gaya", "Gopalganj", "Jamui", "Jehanabad", "Kaimur", "Katihar", "Khagaria", "Kishanganj", "Lakhisarai", "Madhepura", "Madhubani", "Munger", "Muzaffarpur", "Nalanda", "Nawada", "Patna", "Purnia", "Rohtas", "Saharsa", "Samastipur", "Saran", "Sheikhpura", "Sheohar", "Sitamarhi", "Supaul", "Vaishali", "West Champaran"],
+            "Chhattisgarh": ["Balod", "Baloda Bazar", "Balrampur", "Bastar", "Bijapur", "Bilaspur", "Dantewada", "Dhamtari", "Durg", "Gariaband", "Janjgir-Champa", "Jashpur", "Korba", "Koriya", "Mahasamund", "Mungeli", "Narayanpur", "Raigarh", "Raipur", "Rajnandgaon", "Sukma", "Surajpur", "Surguja"],
+            "Goa": ["North Goa", "South Goa"],
+            "Gujarat": ["Ahmedabad", "Amreli", "Anand", "Aravalli", "Banaskantha", "Bharuch", "Bhavnagar", "Botad", "Dahod", "Dang", "Gandhinagar", "Jamnagar", "Junagadh", "Kutch", "Kheda", "Mehsana", "Morbi", "Narmada", "Navsari", "Panchmahal", "Patan", "Porbandar", "Rajkot", "Sabarkantha", "Surat", "Surendranagar", "Tapi", "Vadodara", "Valsad"],
+            "Haryana": ["Ambala", "Bhiwani", "Charkhi Dadri", "Faridabad", "Fatehabad", "Gurugram", "Hisar", "Jhajjar", "Jind", "Kaithal", "Karnal", "Kurukshetra", "Mahendragarh", "Nuh", "Palwal", "Panchkula", "Panipat", "Rewari", "Rohtak", "Sirsa", "Sonipat", "Yamunanagar"],
+            "Himachal Pradesh": ["Bilaspur", "Chamba", "Hamirpur", "Kangra", "Kullu", "Kinnaur", "Mandi", "Shimla", "Sirmaur", "Solan", "Una"],
+            "Jharkhand": ["Bokaro", "Chatra", "Deoghar", "Dhanbad", "Dumka", "East Singhbhum", "Giridih", "Godda", "Gumla", "Hazaribagh", "Jamtara", "Khunti", "Koderma", "Latehar", "Lohardaga", "Pakur", "Palamu", "Ramgarh", "Ranchi", "Sahibganj", "Seraikela Kharsawan", "Simdega", "West Singhbhum"],
+            "Karnataka": ["Bagalkot", "Ballari", "Belagavi", "Bengaluru", "Bidar", "Chamarajanagar", "Chikballapur", "Chikkamagaluru", "Chitradurga", "Dakshina Kannada", "Davanagere", "Hassan", "Haveri", "Kodagu", "Kolar", "Koppal", "Mandya", "Mysuru", "Raichur", "Ramanagara", "Shimoga", "Tumakuru", "Udupi", "Uttara Kannada", "Vijayapura", "Yadgir"],
+            "Kerala": ["Alappuzha", "Ernakulam", "Idukki", "Kannur", "Kasaragod", "Kollam", "Kottayam", "Kozhikode", "Malappuram", "Palakkad", "Pathanamthitta", "Thiruvananthapuram", "Thrissur", "Wayanad"],
+            "Madhya Pradesh": ["Alirajpur", "Anuppur", "Ashoknagar", "Balaghat", "Barwani", "Betul", "Bhind", "Bhopal", "Burhanpur", "Chhatarpur", "Chhindwara", "Damoh", "Datia", "Dewas", "Dhar", "Dindori", "Guna", "Gwalior", "Harda", "Hoshangabad", "Indore", "Jabalpur", "Jhabua", "Katni", "Khandwa", "Khargone", "Mandla", "Mandsaur", "Morena", "Narsinghpur", "Neemuch", "Panna", "Raisen", "Rajgarh", "Ratlam", "Rewa", "Sagar", "Satna", "Sehore", "Seoni", "Shahdol", "Shajapur", "Sheopur", "Shivpuri", "Sidhi", "Singrauli", "Tikamgarh", "Ujjain", "Umaria", "Vidisha", "Agar Malwa", "Niwari"],
+            "Maharashtra": ["Ahmednagar", "Akola", "Amravati", "Aurangabad", "Beed", "Bhandara", "Buldhana", "Chandrapur", "Dhule", "Gadchiroli", "Gondia"],
+            "Manipur": ["Bishnupur", "Chandel", "Churachandpur", "Imphal East", "Imphal West", "Jiribam", "Kakching", "Kamjong", "Kangpokpi", "Noney", "Pherzawl", "Senapati", "Tamenglong", "Tengnoupal", "Thoubal", "Ukhrul"],
+            "Meghalaya": ["East Garo Hills", "East Jaintia Hills", "East Khasi Hills", "North Garo Hills", "Ri-Bhoi", "South Garo Hills", "South West Garo Hills", "South West Khasi Hills", "West Garo Hills", "West Jaintia Hills", "West Khasi Hills"],
+            "Mizoram": ["Aizawl", "Champhai", "Hnahthial", "Khawzawl", "Kolasib", "Lawngtlai", "Lunglei", "Mamit", "Saiha", "Saitual", "Serchhip"],
+            "Nagaland": ["Chümoukedima", "Dimapur", "Kiphire", "Kohima", "Longleng", "Mokokchung", "Mon", "Noklak", "Peren", "Phek", "Tuensang", "Tseminyu", "Wokha", "Zünheboto"],
+            "Odisha": ["Angul", "Balangir", "Balasore", "Bargarh", "Bhadrak", "Boudh", "Cuttack", "Deogarh", "Dhenkanal", "Gajapati", "Ganjam", "Jagatsinghpur", "Jajpur", "Jharsuguda", "Kalahandi", "Kandhamal", "Kendrapara", "Kendujhar", "Khordha", "Koraput", "Malkangiri", "Mayurbhanj", "Nabarangpur", "Nayagarh", "Nuapada", "Puri", "Rayagada", "Sambalpur", "Subarnapur", "Sundargarh"],
+            "Punjab": ["Amritsar", "Barnala", "Bathinda", "Faridkot", "Fatehgarh Sahib", "Fazilka", "Ferozepur", "Gurdaspur", "Hoshiarpur", "Jalandhar", "Kapurthala", "Ludhiana", "Malerkotla", "Mansa", "Moga", "Muktsar", "Nawanshahr (Shaheed Bhagat Singh Nagar)", "Pathankot", "Patiala", "Rupnagar", "Sangrur", "SAS Nagar (Mohali)", "Tarn Taran"],
+            "Rajasthan": ["Ajmer", "Alwar", "Banswara", "Baran", "Barmer", "Bharatpur", "Bhilwara", "Bikaner", "Bundi", "Chittorgarh", "Churu", "Dausa", "Dholpur", "Dungarpur", "Hanumangarh", "Jaipur", "Jaisalmer", "Jalore", "Jhalawar", "Jhunjhunu", "Jodhpur", "Karauli", "Kota", "Nagaur", "Pali", "Pratapgarh", "Rajsamand", "Sawai Madhopur", "Sikar", "Sirohi", "Sri Ganganagar", "Tonk", "Udaipur"],
+            "Sikkim": ["East Sikkim", "North Sikkim", "South Sikkim", "West Sikkim"],
+            "Tamil Nadu": ["Ariyalur", "Chengalpattu", "Chennai", "Coimbatore", "Cuddalore", "Dharmapuri", "Dindigul", "Erode", "Kallakurichi", "Kanchipuram", "Kanyakumari", "Karur", "Krishnagiri", "Madurai", "Nagapattinam", "Namakkal", "Nilgiris", "Perambalur", "Pudukkottai", "Ramanathapuram", "Salem", "Sivaganga", "Tenkasi", "Thanjavur", "Theni", "Tiruchirappalli", "Tirunelveli", "Tiruppur", "Vellore", "Viluppuram", "Virudhunagar"],
+            "Telangana": ["Adilabad", "Bhadradri Kothagudem", "Hyderabad", "Jagtial", "Jangaon", "Jayashankar Bhupalapally", "Jogulamba Gadwal", "Kamareddy", "Karimnagar", "Khammam", "Komaram Bheem Asifabad", "Mahabubabad", "Mahabubnagar", "Mancherial", "Medak", "Medchal-Malkajgiri", "Mulugu", "Nalgonda", "Nagarkurnool", "Nirmal", "Nizamabad", "Peddapalli", "Rajanna Sircilla", "Rangareddy", "Sangareddy", "Siddipet", "Suryapet", "Vikarabad", "Warangal", "Warangal Rural", "Yadadri Bhuvanagiri"],
+            "Tripura": ["Dhalai", "Gomati", "Khowai", "North Tripura", "Sepahijala", "South Tripura", "Unakoti", "West Tripura"],
+            "Uttarakhand": ["Almora", "Bageshwar", "Chamoli", "Champawat", "Dehradun", "Haridwar", "Nainital", "Pauri Garhwal", "Pithoragarh", "Rudraprayag", "Tehri Garhwal", "Udham Singh Nagar", "Uttarkashi"],
+            "Uttar Pradesh": ["Agra", "Aligarh", "Ambedkar Nagar", "Amethi", "Amroha", "Auraiya", "Azamgarh", "Baghpat", "Bahraich", "Ballia", "Balrampur", "Banda", "Barabanki", "Bareilly", "Basti", "Bhadohi", "Bijnor", "Budaun", "Bulandshahr", "Chandauli", "Chitrakoot", "Deoria", "Etah", "Etawah", "Faizabad", "Farrukhabad", "Fatehpur", "Firozabad", "Gautam Buddh Nagar", "Ghaziabad", "Ghazipur", "Gonda", "Gorakhpur", "Hamirpur", "Hapur", "Hardoi", "Hathras", "Jalaun", "Jaunpur", "Jhansi", "Jhansi", "Kannauj", "Kanpur Dehat", "Kanpur Nagar", "Kaushambi", "Kushinagar", "Lakhimpur Kheri", "Lucknow", "Maharajganj", "Mahoba", "Meerut", "Mirzapur", "Moradabad", "Muzaffarnagar", "Pilibhit", "Pratapgarh", "Raebareli", "Rampur", "Saharanpur", "Sambhal", "Sant Kabir Nagar", "Shahjahanpur", "Shamli", "Siddharthnagar", "Sitapur", "Sonbhadra", "Sultanpur", "Unnao", "Varanasi"],
+            "West Bengal": ["Alipurduar", "Bankura", "Birbhum", "Cooch Behar", "Dakshin Dinajpur", "Darjeeling", "Hooghly", "Howrah", "Jalpaiguri", "Jhargram", "Kalimpong", "Kolkata", "Malda", "Murshidabad", "Nadia", "North 24 Parganas", "Paschim Bardhaman", "Paschim Medinipur", "Purba Bardhaman", "Purba Medinipur", "Purulia", "South 24 Parganas", "Uttar Dinajpur"]
+
+
+            // Add more states and districts as needed
+        };
+
+        // Load states into the dropdown
+        window.onload = function () {
+            const stateSelect = document.getElementById('state');
+            for (let state in stateDistrictData) {
+                const option = document.createElement('option');
+                option.value = state;
+                option.textContent = state;
+                stateSelect.appendChild(option);
+            }
+        };
+
+        // Load districts based on selected state
+        function loadDistricts() {
+            const state = document.getElementById('state').value;
+            const districtSelect = document.getElementById('district');
+            districtSelect.innerHTML = '<option value="">Select District</option>';
+
+            if (state) {
+                const districts = stateDistrictData[state];
+                districts.forEach(district => {
+                    const option = document.createElement('option');
+                    option.value = district;
+                    option.textContent = district;
+                    districtSelect.appendChild(option);
+                });
+            }
+        }
+
+        // Handle form submission
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const mobile = document.getElementById('mobile').value;
+            const ivrs = document.getElementById('ivrs').value;
+            const months = document.getElementById('months').value;
+            const nounits = document.getElementById('nounits').value;
+            const state = document.getElementById('state').value;
+            const district = document.getElementById('district').value;
+            const category = document.getElementById('category').value;
+            console.log(months)
+
+            localStorage.setItem('categorys', category);
+            localStorage.setItem('unit', nounits);
+            localStorage.setItem('month', months);
+            if (!name || !mobile || !ivrs || !months || !nounits || !state || !district || !category) {
+                alert("Please fill in all the required fields.");
+            } else {
+                // alert(`Form submitted successfully!\nCustomer Name: ${name}\nMobile: ${mobile}\nState: ${state}\nDistrict: ${district}`);
+                window.location.href = 'calculat.html';
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
